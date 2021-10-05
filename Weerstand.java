@@ -6,6 +6,15 @@ public class Weerstand {
     }
     
     public String getNumber() {
-        return number;
+        return this.number;
+    }
+
+    public void get() {
+        
+    }
+
+    @Override
+    public String toString() {
+        return "De waarde is: " + "<3, 9, 1> " + "\n" + "De kleuren zijn: " + "<oranje, wit, bruin>";
     }
 }
