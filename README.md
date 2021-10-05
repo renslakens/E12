@@ -1,1 +1,9 @@
 # E12
+
+Een weerstand is een elektronische component dat in bijna alle elektronische apparatuur voorkomt. De waarde van zo’n weerstand wordt uitgedrukt in Ohm naar de Duitse weten-schapper Georg Ohm. Het symbool dat voor weerstand gebruikt wordt is Ω. Weerstanden worden meestal geproduceerd volgens de E-12 reeks. De mogelijke waarden van die reeks zijn 10, 12, 15, 18, 22, 27, 33, 39, 47, 56, 68 en 82, eventueel vermenigvuldigd met machten van 10. De vermenigvuldiging noemen we de multiplier. In de tabel is dat aangegeven met MULTIPL. Veel gebruikt worden de termen k (kilo) voor 1.000 en M (mega) voor 1.000.000. Zo kunnen we bijvoorbeeld een weerstand hebben van 68 kΩ = 68.000 Ω (achtenzestig kilo Ohm).
+
+Om de waarde van een weerstand te kunnen aangeven op de weerstand zelf, wordt een kleurcode gebruikt in de vorm van drie ringen. Elke ring heeft een waarde, die gezamenlijk de weerstandswaarde uitdrukken. Dit is te zien in de tabel zoals te zien in figuur 1. De eerste en tweede ring geven aan om welke waarde uit de E-12 reeks het gaat. Rood-rood geeft bijvoor-beeld aan dat de E-12 waarde 22 is. De derde ring geeft aan met hoeveel die waarde verme-nigvuldigd wordt. Een zwarte ring geeft bijvoorbeeld een multiplier van 1 aan, waardoor de weerstandswaarde 22 Ω is.
+ 
+Figuur 1	Tabel met kleuren en factor voor weerstandswaarde volgens E-12
+
+Een tweede voorbeeld: Stel, we willen een weerstand van 4100 Ω. De dichtstbijzijnde waarde uit de E12 reeks is 39 met een factor van 100. We krijgen dan een berekende waarde van 3900 Ω. Precies 4100 Ω zal met één weerstand niet gaan. De kleurcode voor deze weerstand is oranje, wit, rood: oranje = 3, wit = 9 en rood als derde betekent een factor 100. Dit levert samen een weerstand van 3900 Ω. De dichtstbijzijnde optie naar boven is 47 met een factor van 100. Deze combinatie levert een weerstand van 4700 Ω. Omdat 3900 Ω dichterbij ligt, nemen we die waarde als uitkomst.
