@@ -2,9 +2,9 @@ import java.util.Scanner;
 
 public class Weerstand {
     private String number;
-    int[] values = new int[12] {
-        values[0]=10, values[1]=12, values[2]=15, values[3]=18, values[4]=22, values[5]=27, values[6]=33, values[7]=39, values[8]=47, values[9]=56, values[10]=68, values[11]=82
-    }
+    private int[] values = {10, 12, 15, 18, 22, 27, 33, 39, 47, 56, 68, 82};
+    private int myNumber = 0;
+    
 
     public Weerstand(String number) {
         this.number = number;
@@ -14,13 +14,9 @@ public class Weerstand {
         return this.number;
     }
 
-    public void askNumber() {
+    
+    public static void askNumber(String input) {
         int count = 0;
-        Scanner scan = new Scanner(System.in);
-
-        // Lees hoeveel karakters er in de input zitten en print dat uit
-        System.out.println("Give a number: ");
-        String input = scan.nextLine();
 
         Weerstand w1 = new Weerstand(input);
         System.out.println(w1);
@@ -31,6 +27,11 @@ public class Weerstand {
         }
 
         System.out.println(count);
+    }
+
+    // krijgt laatste cijfer van input
+    public static char LastChar(String input){
+        return input.charAt(input.length() - 1);
     }
 
     // Krijg input van askNumber() en vergelijk die met de values arraylist voor het
