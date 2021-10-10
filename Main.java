@@ -17,12 +17,12 @@ public class Main {
         int myNumber = scan.nextInt();
         System.out.println(Weerstand.getClosestNumber(myNumber));
         String test = String.valueOf(myNumber);
-        System.out.println("last char:");
-        System.out.println(Weerstand.LastChar(test));
-        System.out.println("length");
-        System.out.println(Weerstand.askNumber(test));
-        System.out.println(Weerstand.getFirstRing(Weerstand.getClosestNumber(myNumber)));
-        System.out.println(Weerstand.getSecondRing(Weerstand.getClosestNumber(myNumber)));
-        System.out.println(Weerstand.getThirdRing(Weerstand.askNumber(test)));
+        // System.out.println("last char:");
+        // System.out.println(Weerstand.LastChar(test));
+        // System.out.println("length");
+        // System.out.println(Weerstand.askNumber(test));
+        // System.out.println(Weerstand.getFirstRing(Weerstand.getClosestNumber(myNumber)));
+        // System.out.println(Weerstand.getSecondRing(Weerstand.getClosestNumber(myNumber)));
+        // System.out.println(Weerstand.getThirdRing(Weerstand.askNumber(test)));
     }
 }
