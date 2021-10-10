@@ -12,9 +12,17 @@ public class Main {
 
         // Lees hoeveel karakters er in de input zitten en print dat uit
         System.out.println("Give a number: ");
-        String input = scan.nextLine();
-        Weerstand.askNumber(input);
-        System.out.println(Weerstand.LastChar(input));
-        
+       // String input = scan.nextLine();
+        //System.out.println(Weerstand.LastChar(input));
+        int myNumber = scan.nextInt();
+        System.out.println(Weerstand.getClosestNumber(myNumber));
+        String test = String.valueOf(myNumber);
+        System.out.println("last char:");
+        System.out.println(Weerstand.LastChar(test));
+        System.out.println("length");
+        System.out.println(Weerstand.askNumber(test));
+        System.out.println(Weerstand.getFirstRing(Weerstand.getClosestNumber(myNumber)));
+        System.out.println(Weerstand.getSecondRing(Weerstand.getClosestNumber(myNumber)));
+        System.out.println(Weerstand.getThirdRing(Weerstand.askNumber(test)));
     }
 }
