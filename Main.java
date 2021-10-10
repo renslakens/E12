@@ -20,7 +20,6 @@ public class Main {
         // System.out.println("last char:");
         // System.out.println(Weerstand.LastChar(test));
         // System.out.println("length");
-        // System.out.println(Weerstand.askNumber(test));
         // System.out.println(Weerstand.getFirstRing(Weerstand.getClosestNumber(myNumber)));
         // System.out.println(Weerstand.getSecondRing(Weerstand.getClosestNumber(myNumber)));
         // System.out.println(Weerstand.getThirdRing(Weerstand.askNumber(test)));

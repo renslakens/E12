@@ -158,6 +158,6 @@ public class Weerstand {
 
     @Override
     public String toString() {
-        return "De kleuren zijn: " + Weerstand.getFirstRing(Weerstand.getClosestNumber(myNumber)) + Weerstand.getSecondRing(Weerstand.getClosestNumber(myNumber)) + Weerstand.getThirdRing(Weerstand.getClosestNumber(myNumber));
+        return "De kleuren zijn: " + Weerstand.getFirstRing(Weerstand.getClosestNumber(myNumber)) + " " + Weerstand.getSecondRing(Weerstand.getClosestNumber(myNumber)) + " " + Weerstand.getThirdRing(Weerstand.getClosestNumber(myNumber));
     }
 }
