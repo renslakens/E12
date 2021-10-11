@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.lang.Math;
 
 public class Weerstand {
     private String number;
@@ -37,10 +38,12 @@ public class Weerstand {
     // Krijg input van askNumber() en vergelijk die met de values arraylist voor het
     // dichtbijzijndste nummer
     public static int getClosestNumber(int myNumber) {
-        int distance = Math.abs(values[0] - myNumber);
+        String firstChars = String.valueOf(myNumber).substring(0, 1);
+        int firstNumbers = Integer.parseInt(firstChars);  
+        int distance = Math.abs(values[0] - firstNumbers);
         int idx = 0;
         for (int c = 1; c < values.length; c++) {
-            int cdistance = Math.abs(values[c] - myNumber);
+            int cdistance = Math.abs(values[c] - firstNumbers);
             if (cdistance < distance) {
                 idx = c;
                 distance = cdistance;
@@ -53,7 +56,7 @@ public class Weerstand {
     public static String getFirstRing(int getClosestNumber){
         String firstColor = null;
         String ring = String.valueOf(getClosestNumber);
-        char plaat = ring.charAt(ring.length() - 2);
+        char plaat = ring.charAt(0);
         int plaats = Character.getNumericValue(plaat);
         if (plaats == 0){
             firstColor = "zwart";
@@ -91,7 +94,7 @@ public class Weerstand {
     public static String getSecondRing(int getClosestNumber){
         String secondColor = null;
         String ring = String.valueOf(getClosestNumber);
-        char plaat = ring.charAt(ring.length() - 1);
+        char plaat = ring.charAt(1);
         int plaats = Character.getNumericValue(plaat);
         if (plaats == 0){
             secondColor = "zwart";
@@ -158,6 +161,6 @@ public class Weerstand {
 
     @Override
     public String toString() {
-        return "De kleuren zijn: " + Weerstand.getFirstRing(Weerstand.getClosestNumber(myNumber)) + " " + Weerstand.getSecondRing(Weerstand.getClosestNumber(myNumber)) + " " + Weerstand.getThirdRing(Weerstand.getClosestNumber(myNumber));
+        return "De kleuren zijn: ";
     }
 }

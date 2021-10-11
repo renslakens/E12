@@ -15,13 +15,18 @@ public class Main {
        // String input = scan.nextLine();
         //System.out.println(Weerstand.LastChar(input));
         int myNumber = scan.nextInt();
-        System.out.println(Weerstand.getClosestNumber(myNumber));
-        String test = String.valueOf(myNumber);
+        //System.out.println(Weerstand.getClosestNumber(myNumber));
+        //String test = String.valueOf(myNumber);
         // System.out.println("last char:");
-        // System.out.println(Weerstand.LastChar(test));
-        // System.out.println("length");
-        // System.out.println(Weerstand.getFirstRing(Weerstand.getClosestNumber(myNumber)));
-        // System.out.println(Weerstand.getSecondRing(Weerstand.getClosestNumber(myNumber)));
-        // System.out.println(Weerstand.getThirdRing(Weerstand.askNumber(test)));
+        String input = String.valueOf(myNumber);
+        //System.out.println(Weerstand.LastChar(input));
+        //System.out.println("length");
+        //System.out.println(Weerstand.getFirstRing(Weerstand.getClosestNumber(myNumber)));
+        //Weerstand.getFirstRing(Weerstand.getClosestNumber(myNumber));
+        //Weerstand.getSecondRing(Weerstand.getClosestNumber(myNumber));
+        //Weerstand.getThirdRing(Weerstand.askNumber(input));
+        //System.out.println(Weerstand.getSecondRing(Weerstand.getClosestNumber(myNumber)));
+        //System.out.println(Weerstand.getThirdRing(Weerstand.askNumber(input)));
+        System.out.println(Weerstand.getFirstRing(Weerstand.getClosestNumber(myNumber)) + " " + Weerstand.getSecondRing(Weerstand.getClosestNumber(myNumber)) + " " + Weerstand.getThirdRing(Weerstand.askNumber(input)));
     }
 }
